@@ -1,15 +1,37 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Button from '../components/Button.astro';
-import Link from '../components/Link.astro';
-import { Image } from 'astro:assets';
-import thumbsup from "../assets/images/thumbsup.png";
+import Button from "../components/Button.astro";
+import "../styles/global.css";
 ---
-<MainLayout title="Titel">
-	<article>
-		<h1>Index overskrift</h1>
-		<Button>Klik!</Button>
-		<p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p>
-		<Image src={thumbsup} alt=""></Image>
-	</article>
+
+<MainLayout title="Frontpage">
+  <div class="background_container">
+    <div class="background"></div>
+    <!-- Separate background div for blur -->
+    <h1 class="text-8xl text-main tracking-widest relative z-10">HEY THERE!</h1>
+    <h2 class="text-4xl text-main tracking-widest relative z-10">Welcome to my portfolio</h2>
+  </div>
+
+  <!-- Two-column grid layout -->
+  <div class="grid grid-cols-2 items-center gap-8 m-10">
+    <div>
+      <!-- Text content section -->
+      <h2 class="text-3xl text-main">Step right in!</h2>
+      <p class="text-xl text-main mt-4 leading-10">
+        My name is Sara Ringkow Petersen, and I’m currently studying to become a multimedia-designer. If you want, go take a look around, read a bit
+        about who I am, or go look at my projects by clicking <em>My projects</em> in the top menu!
+      </p>
+    </div>
+    <!-- Image section -->
+    <div class="relative flex justify-center">
+      <img id="img1" src="/illustrations/illustration1.svg" alt="illustration" class="w-[250px] pt-4" />
+    </div>
+  </div>
+
+  <style>
+    #img1 {
+      mask-image: linear-gradient(rgb(27, 22, 22), transparent);
+      -webkit-mask-image: linear-gradient(rgb(27, 22, 22), transparent);
+    }
+  </style>
 </MainLayout>

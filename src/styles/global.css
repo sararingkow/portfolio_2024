@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Background & other */
+body {
+  background: rgb(26, 26, 26);
+  background: linear-gradient(0deg, rgba(26, 26, 26, 1) 15%, rgba(52, 52, 52, 1) 50%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.background_container {
+  position: relative;
+  height: 70vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.background {
+  background-image: url(/images/frontpage.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: blur(5px) brightness(0.6); /* Applies blur to the background */
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+h1,
+h2 {
+  z-index: 10;
+  position: relative;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.7), /* Inner glow */ 0 0 10px rgba(255, 255, 255, 0.5), /* Medium glow */ 0 0 15px rgba(0, 183, 255, 0.4); /* Soft colored glow */
+}
+
+/* Footer */
+
+/* Footer Container */
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: transparent;
+  padding: 0 160px;
+  color: #f5f5f5;
+  position: relative; /* Make sure position is relative */
+  z-index: 10; /* Higher z-index to be above the blur */
+}
+
+/* Add z-index to the footer-logo and footer-social if necessary */
+.footer-logo,
+.footer-social {
+  z-index: 10; /* Keep these elements above the blur */
+}
+
+.footer-logo img {
+  width: 45%;
+  object-fit: cover;
+}
+.footer-logo img:hover {
+  opacity: 70%;
+}
+.footer-nav-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none;
+  margin: 25px;
+}
+
+.footer-nav-list li {
+  list-style: none;
+}
+
+.column1 li a {
+  line-height: 2;
+}
+
+.footer-social-contact {
+  text-decoration: none;
+  line-height: 2;
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+.footer-social-contact li {
+  list-style: none;
+}
+
+.some a:hover {
+  opacity: 70%;
+}
+
+.footer-social img {
+  width: 30px; /* Set a uniform size for the icons */
+  height: 30px; /* Ensure they are the same height */
+}
+
+.footer-social .some {
+  display: flex; /* Use flexbox to align items */
+  align-items: center; /* Center the icons vertically */
+  justify-content: flex-start; /* Align items to the start (left) */
+  gap: 10px; /* Space between icons */
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-weight: 600;
+}
+
+.footer-nav a:hover {
+  color: #9ca3af;
+  transition: 0.3s;
+  text-decoration: underline;
+}
+
+i {
+  font-size: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer-nav {
+    padding: 0 20px;
+  }
+}

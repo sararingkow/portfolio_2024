@@ -1,5 +1,77 @@
 ---
+
 ---
-<div>
-Header - tilføj navigation mm.
-</div>
+
+<header class="text-font-color fixed top-0 left-0 w-full z-50 backdrop-blur-sm">
+  <div x-data="{ showmenu: false }" class="p-6">
+    <div id="navbar" class="flex flex-row justify-between">
+      <div id="logo" class="font-bold hover:opacity-30 transition duration-300">
+        <a href="/"><img src="/logo.svg" alt="logo" class="w-28 md:w-32" /> </a>
+      </div>
+      <div id="desktopmenu" class="hidden lg:block text-xl text-center dark:text-main">
+        <ul class="flex flex-wrap -mb-px">
+          <li class="me-8">
+            <a
+              href="/"
+              class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-400 hover:border-gray-400 transition duration-300"
+              >Home</a>
+          </li>
+          <li class="me-8">
+            <a
+              href="#"
+              class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-400 hover:border-gray-400 transition duration-300"
+              >About me</a
+            >
+          </li>
+          <li class="me-8">
+            <a
+              href="#"
+              class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-400 hover:border-gray-400 transition duration-300"
+              aria-current="page">My projects</a
+            >
+          </li>
+          <li class="me-8">
+            <a
+              href="#"
+              class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-400 hover:border-gray-400 transition duration-300"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+      <button id="burgermenu" class="lg:hidden" x-on:click="showmenu = ! showmenu"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-8 hover:text-hover-header transition duration-30"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+        </svg>
+      </button>
+    </div>
+    <nav
+      id="mobilmenu"
+      class="flex flex-col content-center pt-4"
+      x-show="showmenu"
+      x-transition=""
+      x-on:click="showmenu = false"
+      x-on:click.outside="showmenu = false"
+      style="display: none;"
+    >
+      <ul>
+        <li class="text-center py-3 border-b-[1px] hover:text-hover-header active:text-hover-header active:underline transition duration-30">
+          <a href="#info">About me</a>
+        </li>
+        <li class="text-center py-3 border-b-[1px] hover:text-hover-header active:text-hover-header active:underline transition duration-300">
+          <a href="#timeline">My projects</a>
+        </li>
+        <li class="text-center py-3 border-b-[1px] hover:text-hover-header active:text-main active:underline transition duration-300">
+          <a href="#skills">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
