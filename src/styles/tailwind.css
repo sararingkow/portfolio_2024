@@ -20,4 +20,11 @@
     font-family: "Fondamento", serif;
     font-weight: 600;
   }
+
+  p,
+  li,
+  li a,
+  a {
+    font-family: "Forum", serif;
+  }
 }
