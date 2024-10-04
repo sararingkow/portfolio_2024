@@ -25,11 +25,6 @@ body {
 }
 
 .background {
-  background-image: url(/images/frontpage.webp);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  filter: blur(5px) brightness(0.6); /* Applies blur to the background */
   mask-image: linear-gradient(rgba(27, 22, 22, 100), transparent);
   position: absolute;
   top: 0;

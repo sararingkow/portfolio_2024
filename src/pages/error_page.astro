@@ -1,0 +1,35 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import "../styles/global.css";
+---
+
+<MainLayout title="Oops..">
+  <div class="background_container">
+    <div class="background"></div>
+    <!-- Separate background div for blur -->
+    <h1 class="text-8xl text-main tracking-widest relative z-10">OOPS..</h1>
+  </div>
+
+  <!-- Two-column grid layout -->
+  <div class="grid grid-cols-2 items-center gap-8 m-10">
+    <!-- Image section -->
+    <div class="relative flex justify-center">
+      <img id="img2" src="/illustrations/404_illustration.svg" alt="illustration" class="w-[250px] pt-4" />
+    </div>
+    <div>
+      <!-- Text content section -->
+      <p class="text-2xl text-main leading-10">
+        This page is still under construction, so why not visit <br /> some of the other pages in the meantime?
+      </p>
+    </div>
+  </div>
+
+  <style>
+    .background {
+      background-image: url(/images/404.webp);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+</MainLayout>
