@@ -5,6 +5,13 @@ export default {
     extend: {
       colors: {
         main: "#f5f5f5",
+        secondary: "#2c2c2c",
+        tertiary: "#1E1E1E",
+        accent: "#424242",
+        hover: "#3E3E3E",
+        dropdown: "#151515",
+        dropdownBorder: "#2B2B2B",
+        dropdownHover: "#2B2B2B",
       },
     },
   },

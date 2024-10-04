@@ -20,7 +20,7 @@
           </li>
           <li class="me-8">
             <a
-              href="/about.astro"
+              href="/about_me"
               class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-400 hover:border-gray-400 transition duration-300"
               >About me</a
             >
@@ -28,7 +28,7 @@
           <!-- My Projects Dropdown with Arrow -->
           <li class="relative me-8" @mouseenter="showmenu = true" @mouseleave="showmenu = false">
             <a
-              href="#"
+              href="/projects"
               class="p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-400 hover:border-gray-400 transition duration-300 flex items-center"
             >
               My projects
@@ -47,28 +47,28 @@
             <div
               x-show="showmenu"
               x-transition
-              class="absolute left-0 mt-2 w-48 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg z-10"
+              class="absolute left-0 mt-2 w-48 bg-dropdown border border-dropdownBorder rounded-lg shadow-lg z-10"
               style="display: none;"
             >
               <ul>
-                <li class="py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-300">
-                  <a href="/1st_semester.astro">1st semester</a>
+                <li class="py-2 px-4 hover:bg-dropdownHover transition duration-300">
+                  <a href="/1st_semester">1st semester</a>
                   <!-- Updated -->
                 </li>
-                <li class="py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-300">
-                  <a href="/2nd_semester.astro">2nd semester</a>
+                <li class="py-2 px-4 hover:bg-dropdownHover transition duration-300">
+                  <a href="/2nd_semester">2nd semester</a>
                   <!-- Updated -->
                 </li>
-                <li class="py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-300">
-                  <a href="/3rd_semester.astro">3rd semester</a>
+                <li class="py-2 px-4 hover:bg-dropdownHover transition duration-300">
+                  <a href="/3rd_semester">3rd semester</a>
                   <!-- Updated -->
                 </li>
-                <li class="py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-300">
-                  <a href="/error_page.astro">4th semester</a>
+                <li class="py-2 px-4 hover:bg-dropdownHover transition duration-300">
+                  <a href="/error_page">4th semester</a>
                   <!-- Updated -->
                 </li>
-                <li class="py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-300">
-                  <a href="/error_page.astro">Other projects</a>
+                <li class="py-2 px-4 hover:bg-dropdownHover transition duration-300">
+                  <a href="/error_page">Other projects</a>
                   <!-- Updated -->
                 </li>
               </ul>
@@ -76,7 +76,7 @@
           </li>
           <li class="me-8">
             <a
-              href="/contact.astro"
+              href="/contact"
               class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-400 hover:border-gray-400 transition duration-300"
               >Contact</a
             >
@@ -91,7 +91,7 @@
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="currentColor"
-          class="size-8 hover:text-hover-header transition duration-30"
+          class="size-8 text-main hover:opacity-30 transition duration-30"
         >
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
         </svg>
