@@ -12,7 +12,43 @@ import "../styles/global.css";
   </div>
 
   <!-- Two-column grid layout -->
-  <div class="grid grid-cols-2 items-center gap-8 m-10"></div>
+  <div class="flex flex-col md:flex-row gap-4 p-4 m-20">
+    <!-- First column: Text -->
+    <div class="w-full md:w-1/2 flex items-center justify-center md:justify-end p-4">
+      <h2 class="text-2xl leading-10">1ST SEMESTER</h2>
+    </div>
+
+    <!-- Second column: Image -->
+    <div class="w-full md:w-1/2 flex items-center justify-start p-4">
+      <img src="images/entrance_exam.webp" alt="entrance exam" class="w-[500px] h-[500px] object-cover rounded-full" />
+    </div>
+  </div>
+
+  <!-- Next row: Image and Text -->
+  <div class="flex flex-col md:flex-row gap-4 p-4 m-20">
+    <!-- First image -->
+    <div class="flex items-center justify-center p-4">
+      <img src="images/karrusel.webp" alt="karrusel" class="w-[500px] h-[500px] object-cover rounded-full" />
+    </div>
+
+    <!-- Second text block -->
+    <div class="w-full md:w-1/2 flex items-center justify-start p-4 m-20">
+      <h2 class="text-2xl leading-10 text-right">2ND SEMESTER</h2>
+    </div>
+  </div>
+
+  <!-- Final row: Text and Image -->
+  <div class="flex flex-col md:flex-row gap-4 p-4 m-10">
+    <!-- Text content -->
+    <div class="w-full md:w-1/2 flex items-center justify-center md:justify-end p-4 m-20">
+      <h2 class="text-2xl leading-10 text-left">3RD SEMESTER</h2>
+    </div>
+
+    <!-- Image -->
+    <div class="w-full md:w-1/2 flex items-center justify-start p-4">
+      <img src="images/internship_prep.webp" alt="internship" class="w-[500px] h-[500px] object-cover rounded-full" />
+    </div>
+  </div>
 
   <style>
     #img1 {
