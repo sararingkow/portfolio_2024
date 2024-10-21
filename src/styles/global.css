@@ -25,6 +25,7 @@ body {
 }
 
 .background {
+  background-image: url(/images/background.webp);
   mask-image: linear-gradient(rgba(27, 22, 22, 100), transparent);
   position: absolute;
   top: 0;
@@ -134,7 +135,7 @@ h1 {
 }
 
 .footer-nav a:hover {
-  color: #9ca3af;
+  color: #ff3333;
   transition: 0.3s;
   text-decoration: underline;
 }
