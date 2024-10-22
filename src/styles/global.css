@@ -49,6 +49,81 @@ h1 {
   text-shadow: 0 0 5px rgba(54, 54, 54, 0.7);
 }
 
+.circle-text {
+  text-shadow: 0 0 5px rgba(54, 54, 54, 0.7);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #181818;
+}
+
+.circle1:hover,
+.circle1_1:hover,
+.circle1_2:hover,
+.circle1_3:hover,
+.circle1_4:hover {
+  background: linear-gradient(to left, #43434380, #00000080); /* Adjust the color values as needed */
+  transition: background 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Animation-keyframes */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px); /* Reduced distance for a smoother effect */
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Animations: image circles */
+.circle_1st {
+  animation: float 5s ease-in-out infinite; /* Speeding up */
+}
+
+.circle_2nd {
+  animation: float 6s ease-in-out infinite; /* Speeding up */
+}
+
+.circle_3rd {
+  animation: float 6.5s ease-in-out infinite; /* Speeding up */
+}
+
+.circle_4th {
+  animation: float 5s ease-in-out infinite; /* Speeding up */
+}
+
+.circle_other {
+  animation: float 6s ease-in-out infinite; /* Speeding up */
+}
+
+/* Animations: decorative text circles */
+.circle1 {
+  animation: float 5s ease-in-out infinite; /* Speeding up */
+  animation-delay: 1s;
+}
+
+.circle1_1 {
+  animation: float 6s ease-in-out infinite; /* Speeding up */
+  animation-delay: 2s;
+}
+
+.circle1_2 {
+  animation: float 6.5s ease-in-out infinite; /* Speeding up */
+  animation-delay: 3s;
+}
+
+.circle1_3 {
+  animation: float 5s ease-in-out infinite; /* Speeding up */
+  animation-delay: 4s;
+}
+
+.circle1_4 {
+  animation: float 6s ease-in-out infinite; /* Speeding up */
+  animation-delay: 5s;
+}
+
 /* Footer */
 
 .some p {

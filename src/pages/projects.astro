@@ -14,123 +14,154 @@ import "../styles/global.css";
     </h2>
   </div>
 
-  <!-- Two-column grid layout -->
-  <div class="flex flex-col md:flex-row gap-4 p-4 m-20">
-    <!-- First column: Decorative circle -->
-    <div class="w-full md:w-1/2 flex items-center justify-center md:justify-end p-4">
-      <div class="relative overflow-hidden rounded-full shadow-lg w-[200px] h-[200px] bg-zinc-700 flex items-center justify-center">
-        <p class="text-lg font-semibold">The past</p>
+  <div class="relative">
+    <!-- Two-column grid layout -->
+    <div class="flex flex-col md:flex-row gap-4 p-4 m-20 text-main">
+      <!-- First column: Decorative circle -->
+      <div class="w-full md:w-1/2 flex items-center justify-center md:justify-end p-4 relative">
+        <a href="/1st_semester">
+          <div class="circle1 relative overflow-hidden rounded-full shadow-lg w-[200px] h-[200px] bg-zinc-700 flex items-center justify-center z-10">
+            <h2 class="text-2xl font-semibold text-center">The past</h2>
+          </div>
+        </a>
+      </div>
+
+      <!-- Second column: Image with hover effect (1st semester) -->
+      <div class="w-full md:w-1/2 flex items-center justify-start p-4">
+        <a href="/1st_semester">
+          <div class="circle_1st relative overflow-hidden rounded-full shadow-lg group w-[400px] h-[400px]">
+            <img src="images/entrance_exam.webp" alt="entrance exam" class="w-full h-full object-cover rounded-full" />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+            >
+              <h1 class="circle-text text-4xl font-bold text-main">1ST SEMESTER</h1>
+            </div>
+            <div class="absolute inset-0 rounded-full bg-gradient-to-r from-transparent to-gray-300 opacity-30 pointer-events-none"></div>
+            <div class="absolute inset-0 rounded-full bg-gradient-to-b from-transparent to-gray-200 opacity-20 pointer-events-none"></div>
+          </div>
+        </a>
       </div>
     </div>
 
-    <!-- Second column: Image with hover effect (1st semester) -->
-    <div class="w-full md:w-1/2 flex items-center justify-start p-4">
-      <a href="/1st_semester">
-        <div class="relative overflow-hidden rounded-full shadow-lg group w-[500px] h-[500px]">
-          <img src="images/entrance_exam.webp" alt="entrance exam" class="w-full h-full object-cover rounded-full" />
-          <div
-            class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
-          >
-            <h1 class="text-4xl font-bold text-white">1ST SEMESTER</h1>
+    <!-- Next row: Image and Text with hover effect (2nd semester) -->
+    <div class="flex flex-col md:flex-row gap-4 p-4 m-20">
+      <!-- First column: Image with hover effect (2nd semester) -->
+      <div class="w-full md:w-1/2 flex items-center justify-center p-4">
+        <a href="/2nd_semester">
+          <div class="circle_2nd relative overflow-hidden rounded-full border-opacity-40 shadow-lg group w-[400px] h-[400px]">
+            <img src="images/karrusel.webp" alt="karrusel" class="w-full h-full object-cover rounded-full" />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+            >
+              <h1 class="circle-text text-4xl font-bold text-main">2ND SEMESTER</h1>
+            </div>
+            <div class="absolute inset-0 rounded-full bg-gradient-to-r from-gray-300 to-transparent opacity-30 pointer-events-none"></div>
+            <div class="absolute inset-0 rounded-full bg-gradient-to-b from-gray-200 to-transparent opacity-20 pointer-events-none"></div>
           </div>
-        </div>
-      </a>
-    </div>
-  </div>
-
-  <!-- Next row: Image and Text with hover effect (2nd semester) -->
-  <div class="flex flex-col md:flex-row gap-4 p-4 m-20">
-    <!-- First column: Image with hover effect (2nd semester) -->
-    <div class="w-full md:w-1/2 flex items-center justify-center p-4">
-      <a href="/2nd_semester">
-        <div class="relative overflow-hidden rounded-full shadow-lg group w-[500px] h-[500px]">
-          <img src="images/karrusel.webp" alt="karrusel" class="w-full h-full object-cover rounded-full" />
-          <div
-            class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
-          >
-            <h1 class="text-4xl font-bold text-white">2ND SEMESTER</h1>
-          </div>
-        </div>
-      </a>
-    </div>
-
-    <!-- Second column: Decorative circle -->
-    <div class="w-full md:w-1/2 flex items-center justify-start p-4">
-      <div class="relative overflow-hidden rounded-full shadow-lg w-[200px] h-[200px] bg-zinc-700 flex items-center justify-center">
-        <p class="text-lg font-semibold">Moving forward</p>
+        </a>
       </div>
-    </div>
-  </div>
 
-  <!-- Final row: Text and Image with hover effect (3rd semester) -->
-  <div class="flex flex-col md:flex-row gap-4 p-4 m-10">
-    <!-- First column: Empty (3rd semester) -->
-    <div class="w-full md:w-1/2 flex items-center justify-center md:justify-end p-4">
-      <div class="relative overflow-hidden rounded-full shadow-lg w-[200px] h-[200px] bg-zinc-700 flex items-center justify-center">
-        <p class="text-lg font-semibold">The present</p>
+      <!-- Second column: Decorative circle -->
+      <div class="w-full md:w-1/2 flex items-center justify-start p-4 text-main">
+        <a href="/2nd_semester">
+          <div
+            class="circle1_1 relative overflow-hidden rounded-full shadow-lg w-[200px] h-[200px] bg-zinc-700 flex items-center justify-center z-10"
+          >
+            <h2 class="text-2xl font-semibold text-center">Moving <br /> forward</h2>
+          </div>
+        </a>
       </div>
     </div>
 
-    <!-- Image with hover effect (3rd semester) -->
-    <div class="w-full md:w-1/2 flex items-center justify-start p-4">
-      <a href="/3rd_semester">
-        <div class="relative overflow-hidden rounded-full shadow-lg group w-[500px] h-[500px]">
-          <img src="images/internship_prep.webp" alt="internship" class="w-full h-full object-cover rounded-full" />
-          <div
-            class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
-          >
-            <h1 class="text-4xl font-bold text-white">3RD SEMESTER</h1>
-          </div>
-        </div>
-      </a>
-    </div>
-  </div>
+    <!-- Final row: Image with hover effect (3rd semester) -->
+    <div class="flex flex-col md:flex-row gap-4 p-4 m-10 text-main">
+      <!-- First column: Decorative circle -->
 
-  <!-- Fourth row: Image and Text with hover effect (4th semester) -->
-  <div class="flex flex-col md:flex-row gap-4 p-4 m-20">
-    <!-- First column: Image with hover effect (4th semester) -->
-    <div class="w-full md:w-1/2 flex items-center justify-center p-4">
-      <a href="/error_page">
-        <div class="relative overflow-hidden rounded-full shadow-lg group w-[500px] h-[500px]">
-          <img src="images/404_error.webp" alt="4th semester" class="w-full h-full object-cover rounded-full" />
+      <div class="w-full md:w-1/2 flex items-center justify-center md:justify-end p-4">
+        <a href="/3rd_semester">
           <div
-            class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+            class="circle1_2 relative overflow-hidden rounded-full shadow-lg w-[200px] h-[200px] bg-zinc-700 flex items-center justify-center z-10"
           >
-            <h1 class="text-4xl font-bold text-white">4TH SEMESTER</h1>
+            <h2 class="text-2xl font-semibold text-center">The present</h2>
           </div>
-        </div>
-      </a>
-    </div>
-
-    <!-- Second column: Decorative circle -->
-    <div class="w-full md:w-1/2 flex items-center justify-start p-4">
-      <div class="relative overflow-hidden rounded-full shadow-lg w-[200px] h-[200px] bg-zinc-700 flex items-center justify-center">
-        <p class="text-lg font-semibold">The future</p>
+        </a>
       </div>
-    </div>
-  </div>
 
-  <!-- Fifth row: Text and Image with hover effect (Other projects) -->
-  <div class="flex flex-col md:flex-row gap-4 p-4 m-20">
-    <!-- First column: Empty (Other projects) -->
-    <div class="w-full md:w-1/2 flex items-center justify-center md:justify-end p-4">
-      <div class="relative overflow-hidden rounded-full shadow-lg w-[200px] h-[200px] bg-zinc-700 flex items-center justify-center">
-        <p class="text-lg font-semibold">Side-hustles</p>
+      <!-- Second column: Image with hover effect (3rd semester) -->
+      <div class="w-full md:w-1/2 flex items-center justify-start p-4">
+        <a href="/3rd_semester">
+          <div class="circle_3rd relative overflow-hidden rounded-full shadow-lg group w-[400px] h-[400px]">
+            <img src="images/internship_prep.webp" alt="internship" class="w-full h-full object-cover rounded-full" />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+            >
+              <h1 class="circle-text text-4xl font-bold text-main">3RD SEMESTER</h1>
+            </div>
+            <div class="absolute inset-0 rounded-full bg-gradient-to-r from-transparent to-gray-300 opacity-30 pointer-events-none"></div>
+            <div class="absolute inset-0 rounded-full bg-gradient-to-b from-transparent to-gray-200 opacity-20 pointer-events-none"></div>
+          </div>
+        </a>
       </div>
     </div>
 
-    <!-- Image with hover effect (Other projects) -->
-    <div class="w-full md:w-1/2 flex items-center justify-start p-4">
-      <a href="/error_page">
-        <div class="relative overflow-hidden rounded-full shadow-lg group w-[500px] h-[500px]">
-          <img src="images/404_error.webp" alt="other projects" class="w-full h-full object-cover rounded-full" />
-          <div
-            class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
-          >
-            <h1 class="text-4xl font-bold text-white">OTHER PROJECTS</h1>
+    <!-- Fourth row: Image with hover effect (4th semester) -->
+    <div class="flex flex-col md:flex-row gap-4 p-4 m-20">
+      <!-- First column: Image with hover effect (4th semester) -->
+      <div class="w-full md:w-1/2 flex items-center justify-center p-4">
+        <a href="/error_page">
+          <div class="circle_4th relative overflow-hidden rounded-full shadow-lg border-opacity-40 group w-[400px] h-[400px]">
+            <img src="images/404_error.webp" alt="4th semester" class="w-full h-full object-cover rounded-full" />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+            >
+              <h1 class="circle-text text-4xl font-bold text-main">4TH SEMESTER</h1>
+            </div>
+            <div class="absolute inset-0 rounded-full bg-gradient-to-r from-gray-300 to-transparent opacity-30 pointer-events-none"></div>
+            <div class="absolute inset-0 rounded-full bg-gradient-to-b from-gray-200 to-transparent opacity-20 pointer-events-none"></div>
           </div>
-        </div>
-      </a>
+        </a>
+      </div>
+
+      <!-- Second column: Decorative circle -->
+      <div class="w-full md:w-1/2 flex items-center justify-start p-4 text-main">
+        <a href="/error_page">
+          <div
+            class="circle1_3 relative overflow-hidden rounded-full shadow-lg w-[200px] h-[200px] bg-zinc-700 flex items-center justify-center z-10"
+          >
+            <h2 class="text-2xl font-semibold text-center">The future</h2>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Fifth row: Image with hover effect (Other projects) -->
+    <div class="flex flex-col md:flex-row gap-4 p-4 m-20 text-main">
+      <!-- First column: Decorative circle -->
+      <div class="w-full md:w-1/2 flex items-center justify-center md:justify-end p-4">
+        <a href="/error_page">
+          <div
+            class="circle1_4 relative overflow-hidden rounded-full shadow-lg w-[200px] h-[200px] bg-zinc-700 flex items-center justify-center z-10"
+          >
+            <h2 class="text-2xl font-semibold text-center">Side-hustles</h2>
+          </div>
+        </a>
+      </div>
+
+      <!-- Second column: Image with hover effect (Other projects) -->
+      <div class="w-full md:w-1/2 flex items-center justify-start p-4">
+        <a href="/error_page">
+          <div class="circle_other relative overflow-hidden rounded-full shadow-lg group w-[400px] h-[400px]">
+            <img src="images/404_error.webp" alt="other projects" class="w-full h-full object-cover rounded-full" />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+            >
+              <h1 class="circle-text text-4xl font-bold text-main">OTHER PROJECTS</h1>
+            </div>
+            <div class="absolute inset-0 rounded-full bg-gradient-to-r from-transparent to-gray-300 opacity-30 pointer-events-none"></div>
+            <div class="absolute inset-0 rounded-full bg-gradient-to-b from-transparent to-gray-200 opacity-20 pointer-events-none"></div>
+          </div>
+        </a>
+      </div>
     </div>
   </div>
 
