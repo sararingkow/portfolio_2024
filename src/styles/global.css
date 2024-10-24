@@ -51,8 +51,6 @@ h1 {
 
 .circle-text {
   text-shadow: 0 0 5px rgba(54, 54, 54, 0.7);
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #181818;
 }
 
 .circle1:hover,
