@@ -1,5 +1,5 @@
 ---
-
+import "../styles/global.css";
 ---
 
 <header class="text-font-color fixed top-0 left-0 w-full z-50 backdrop-blur-sm">
@@ -11,26 +11,17 @@
       <!-- Desktop Menu -->
       <div id="desktopmenu" class="hidden lg:block text-lg text-center dark:text-main">
         <ul class="flex flex-wrap -mb-px">
-          <li class="me-8">
-            <a
-              href="/"
-              class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-[#FF3333] hover:border-[#FF3333] transition duration-300"
-              >Home</a
-            >
+          <li class="some1 me-8">
+            <a href="/" class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-[#FF3333] transition duration-300">Home</a>
           </li>
-          <li class="me-8">
-            <a
-              href="/about_me"
-              class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-[#FF3333] hover:border-[#FF3333] transition duration-300"
+          <li class="some1 me-8">
+            <a href="/about_me" class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-[#FF3333] transition duration-300"
               >About me</a
             >
           </li>
           <!-- My Projects Dropdown with Arrow -->
-          <li class="relative me-8" @mouseenter="showmenu = true" @mouseleave="showmenu = false">
-            <a
-              href="/projects"
-              class="p-4 border-b-2 border-transparent rounded-t-lg hover:text-[#FF3333] hover:border-[#FF3333] transition duration-300 flex items-center"
-            >
+          <li class="some1 relative me-8" @mouseenter="showmenu = true" @mouseleave="showmenu = false">
+            <a href="/projects" class="p-4 border-b-2 border-transparent rounded-t-lg hover:text-[#FF3333] transition duration-300 flex items-center">
               My projects
               <svg
                 class="w-4 h-4 ml-2 transition-transform duration-300 transform"
@@ -52,32 +43,30 @@
             >
               <ul>
                 <li class="py-2 px-4 hover:bg-dropdownHover transition duration-300">
-                  <a href="/1st_semester">1st semester</a>
+                  <a href="/1st_semester" class="hover:text-[#FF3333]">1st semester</a>
                   <!-- Updated -->
                 </li>
                 <li class="py-2 px-4 hover:bg-dropdownHover transition duration-300">
-                  <a href="/2nd_semester">2nd semester</a>
+                  <a href="/2nd_semester" class="hover:text-[#FF3333]">2nd semester</a>
                   <!-- Updated -->
                 </li>
                 <li class="py-2 px-4 hover:bg-dropdownHover transition duration-300">
-                  <a href="/3rd_semester">3rd semester</a>
+                  <a href="/3rd_semester" class="hover:text-[#FF3333]">3rd semester</a>
                   <!-- Updated -->
                 </li>
                 <li class="py-2 px-4 hover:bg-dropdownHover transition duration-300">
-                  <a href="/error_page">4th semester</a>
+                  <a href="/error_page" class="hover:text-[#FF3333]">4th semester</a>
                   <!-- Updated -->
                 </li>
                 <li class="py-2 px-4 hover:bg-dropdownHover transition duration-300">
-                  <a href="/error_page">Other projects</a>
+                  <a href="/error_page" class="hover:text-[#FF3333]">Other projects</a>
                   <!-- Updated -->
                 </li>
               </ul>
             </div>
           </li>
-          <li class="me-8">
-            <a
-              href="/contact"
-              class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-[#FF3333] hover:border-[#FF3333] transition duration-300"
+          <li class="some1 me-8">
+            <a href="/contact" class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-[#FF3333] transition duration-300"
               >Contact</a
             >
           </li>
