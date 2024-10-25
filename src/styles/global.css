@@ -62,6 +62,19 @@ h1 {
   transition: background 0.3s ease-in-out; /* Smooth transition */
 }
 
+.circle_other::before,
+.circle_1st::before,
+.circle_2nd::before,
+.circle_3rd::before,
+.circle_4th::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.8); /* Adjust blur and color for inner shadow */
+  pointer-events: none;
+}
+
 /* Animation-keyframes */
 @keyframes float {
   0% {
@@ -123,7 +136,6 @@ h1 {
 }
 
 /* Footer */
-
 .some p {
   margin: 0; /* Reset default margins */
   margin-bottom: 0.5rem; /* Add spacing below the paragraph */
@@ -241,6 +253,8 @@ h1 {
 
 .some1 a {
   position: relative;
+  font-size: 1.125rem /* 18px */;
+  line-height: 1.75rem /* 28px */;
 }
 
 .some1 a::before {
@@ -255,6 +269,10 @@ h1 {
   transform-origin: right;
   transform: scaleX(0);
   transition: transform 0.3s ease-in-out;
+}
+
+.some1 a:hover {
+  color: #ff3333;
 }
 
 .some1 a:hover::before {

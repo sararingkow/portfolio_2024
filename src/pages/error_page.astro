@@ -7,28 +7,83 @@ import "../styles/global.css";
   <div class="background_container">
     <div class="background"></div>
     <!-- Separate background div for blur -->
-    <h1 class="text-8xl text-main tracking-widest relative z-10">OOPS..</h1>
+    <h1 class="text-7xl md:text-8xl text-main tracking-widest relative z-10">OOPS..</h1>
   </div>
 
   <!-- Two-column grid layout -->
-  <div class="grid grid-cols-2 items-center gap-8 m-10">
+  <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8 m-10">
     <!-- Image section -->
     <div class="relative flex justify-center">
-      <img id="img2" src="/illustrations/404_illustration.svg" alt="illustration" class="w-[250px] pt-4" />
+      <img id="img2" src="/illustrations/404_illustration.svg" alt="illustration" class="w-[200px] md:w-[250px] pt-4" />
     </div>
     <div>
       <!-- Text content section -->
-      <p class="text-xl text-main leading-10">
-        This page is still under construction, so why not visit <br /> some of the other pages in the meantime?
+      <h2 class="text-2xl md:text-3xl text-main pb-4 pt-8 md:pt-0 md:pb-8">Sorry that I'm leaving a mess!</h2>
+      <p class="text-lg md:text-xl text-main leading-10 max-w-lg">
+        This page is still under construction, so why not visit some of the other pages in the meantime?
       </p>
+      <div class="flex items-center space-x-4 pt-12 md:pt-16">
+        <a href="/" class="btn btn-1 text-sm md:text-md">
+          <svg>
+            <rect x="0" y="0" fill="none" width="100%" height="100%"></rect>
+          </svg>
+          Back to frontpage
+        </a>
+      </div>
     </div>
   </div>
-  <div class="pb-32"></div>
+  <div class="pb-24 md:pb-32"></div>
   <style>
     .background {
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
+    }
+
+    /* Button */
+    .btn {
+      color: #fff;
+      cursor: pointer;
+      font-weight: 400;
+      line-height: 45px;
+      max-width: 200px;
+      position: relative;
+      text-decoration: none;
+      text-transform: uppercase;
+      text-align: center;
+      width: 100%;
+    }
+    .btn-1 {
+      background: darken($red, 1.5%);
+      font-weight: 600;
+
+      svg {
+        height: 45px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+      }
+
+      rect {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 4;
+        stroke-dasharray: 422, 0;
+        transition: all 0.35s linear;
+      }
+    }
+
+    .btn-1:hover {
+      font-weight: 900;
+      letter-spacing: 1px;
+
+      rect {
+        stroke-width: 5;
+        stroke-dasharray: 15, 310;
+        stroke-dashoffset: 48;
+        transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+      }
     }
   </style>
 </MainLayout>

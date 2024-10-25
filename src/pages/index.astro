@@ -8,16 +8,16 @@ import "../styles/global.css";
   <div class="background_container">
     <div class="background"></div>
     <!-- Separate background div for blur -->
-    <h1 class="text-8xl text-main tracking-widest relative z-10 pb-4">HEY THERE!</h1>
-    <h2 class="portfolio-title text-4xl text-main tracking-widest relative z-10">Welcome to my portfolio</h2>
+    <h1 class="text-8xl md:text-9xl text-main tracking-widest relative z-10 pb-4">HEY THERE!</h1>
+    <h2 class="portfolio-title text-center text-4xl md:text-5xl text-main tracking-widest relative z-10">Welcome to my portfolio</h2>
   </div>
 
   <!-- Two-column grid layout -->
-  <div class="grid grid-cols-2 items-center gap-8 m-10">
+  <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8 m-10">
     <div>
       <!-- Text content section -->
-      <h2 class="text-2xl text-main pb-4">Step right in!</h2>
-      <p class="text-lg text-main leading-10 pb-12">
+      <h2 class="text-2xl md:text-3xl text-main pb-4">Step right in!</h2>
+      <p class="text-lg md:text-xl text-main leading-10 pb-12">
         My name is Sara Ringkow Petersen, and I’m currently studying to become a multimedia-designer. If you want, go take a look around, read a bit
         about who I am, or go look at my projects by clicking <em>My projects</em> either in the top menu or on the button below!
       </p>
@@ -26,11 +26,11 @@ import "../styles/global.css";
       <Button buttonText="My projects" />
     </div>
     <!-- Image section -->
-    <div class="relative flex justify-center">
-      <img id="img1" src="/images/pfp3.webp" alt="portrait1" class="w-[400px] rounded-full shadow-lg pt-4" />
+    <div class="relative flex justify-center pt-8 md:pt-0">
+      <img id="img1" src="/images/pfp3.webp" alt="portrait1" class="w-80 h-80 object-cover rounded-full shadow-lg pt-4" />
     </div>
   </div>
-  <div class="pb-32"></div>
+  <div class="pb-20 md:pb-32"></div>
   <style>
     .background {
       background-size: cover;
