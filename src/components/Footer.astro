@@ -1,12 +1,27 @@
 ---
-
+import "../styles/global.css";
 ---
 
 <footer>
   <div class="footer-nav flex flex-col md:flex-row justify-between items-center bg-transparent px-12 text-white">
-    <div class="footer-logo">
-      <a href="/"><img src="/logo.svg" alt="footer logo" class="w-28 md:w-24" /></a>
+    <div class="footer-logo relative font-bold transition-opacity duration-300 ease-in-out group w-20 h-20">
+      <!-- Fixed width and height -->
+      <a href="/" class="relative inline-block w-full h-full">
+        <!-- Default Logo -->
+        <img
+          src="/logo.svg"
+          alt="logo"
+          class="opacity-100 group-hover:opacity-0 transition-opacity duration-300 ease-in-out object-contain w-20 h-20"
+        />
+        <!-- Hover Logo -->
+        <img
+          src="/images/logo_grey.svg"
+          alt="logo grey"
+          class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out object-contain w-20 h-20"
+        />
+      </a>
     </div>
+
     <div class="column1">
       <ul class="footer-nav-list">
         <li><a class="text-lg" href="/about_me">About me</a></li>

@@ -3,25 +3,44 @@ import "../styles/global.css";
 ---
 
 <header class="text-font-color fixed top-0 left-0 w-full z-50 backdrop-blur-sm">
-  <div x-data="{ showmenu: false }" class="p-6">
+  <div x-data="{ showmenu: false }" class="">
     <div id="navbar" class="flex flex-row justify-between">
-      <div id="logo" class="font-bold hover:opacity-30 transition duration-300">
-        <a href="/"><img src="/logo.svg" alt="header logo" class="w-20 md:w-24" /></a>
+      <!-- Logo -->
+      <div id="logo" class="relative font-bold transition-opacity duration-300 ease-in-out group w-20 h-20">
+        <!-- Fixed width and height -->
+        <a href="/" class="relative inline-block w-full h-full">
+          <!-- Default Logo -->
+          <img
+            src="/logo.svg"
+            alt="logo"
+            class="opacity-100 group-hover:opacity-0 transition-opacity duration-300 ease-in-out object-contain w-full h-full"
+          />
+          <!-- Hover Logo -->
+          <img
+            src="/images/logo_grey.svg"
+            alt="logo grey"
+            class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out object-contain w-full h-full"
+          />
+        </a>
       </div>
       <!-- Desktop Menu -->
       <div id="desktopmenu" class="hidden lg:block text-lg text-center dark:text-main">
         <ul class="flex flex-wrap -mb-px">
           <li class="some1 me-8">
-            <a href="/" class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-[#FF3333] transition duration-300">Home</a>
+            <a href="/" class="inline-block px-5 py-5 border-b-2 border-transparent rounded-t-lg hover:text-[#FF3333] transition duration-300">Home</a
+            >
           </li>
           <li class="some1 me-8">
-            <a href="/about_me" class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-[#FF3333] transition duration-300"
+            <a href="/about_me" class="inline-block px-5 py-5 border-b-2 border-transparent rounded-t-lg hover:text-[#FF3333] transition duration-300"
               >About me</a
             >
           </li>
           <!-- My Projects Dropdown with Arrow -->
           <li class="some1 relative me-8" @mouseenter="showmenu = true" @mouseleave="showmenu = false">
-            <a href="/projects" class="p-4 border-b-2 border-transparent rounded-t-lg hover:text-[#FF3333] transition duration-300 flex items-center">
+            <a
+              href="/projects"
+              class="px-5 py-5 border-b-2 border-transparent rounded-t-lg hover:text-[#FF3333] transition duration-300 flex items-center"
+            >
               My projects
               <svg
                 class="w-4 h-4 ml-2 transition-transform duration-300 transform"
@@ -66,7 +85,7 @@ import "../styles/global.css";
             </div>
           </li>
           <li class="some1 me-8">
-            <a href="/contact" class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-[#FF3333] transition duration-300"
+            <a href="/contact" class="inline-block px-5 py-5 border-b-2 border-transparent rounded-t-lg hover:text-[#FF3333] transition duration-300"
               >Contact</a
             >
           </li>
